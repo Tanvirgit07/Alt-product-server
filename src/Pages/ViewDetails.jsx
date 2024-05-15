@@ -141,6 +141,7 @@ const ViewDetails = () => {
               {/* {" "} */}
               Add Recommendation Form
             </h1>
+            
           </div>
         </div>
       </div>
@@ -168,7 +169,7 @@ const ViewDetails = () => {
                 className="input input-bordered input-accent w-full"
               />
             </div>
-            
+
             <div>
               <p className="text-lg font-medium mb-1">
                 Recommended Product Image
