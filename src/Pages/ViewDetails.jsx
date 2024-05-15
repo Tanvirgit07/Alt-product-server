@@ -4,6 +4,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 
 const ViewDetails = () => {
   const viewData = useLoaderData();
+  const [reCount,setReCount] = useState(viewData.recommendationCount)
 
   const { user } = useContext(AuthContext);
 
@@ -58,6 +59,7 @@ const ViewDetails = () => {
         console.log(data);
         const t = [...newData,newViewData]
         setNewData(t)
+        setReCount(reCount + 1)
       });
   };
 
@@ -67,8 +69,9 @@ const ViewDetails = () => {
       .then((data) => {
         console.log(data);
         setNewData(data);
+       
       });
-  }, [newData,viewData?._id]);
+  }, [viewData?._id]);
 
   return (
     <div className="my-10">
@@ -118,7 +121,7 @@ const ViewDetails = () => {
             </p>
             <p className="text-lg font-medium mb-1">
               <span className="text-xl font-bold">RecommendationCount : </span>
-              {viewData.recommendationCount}
+              {reCount}
             </p>
           </div>
         </div>
@@ -165,6 +168,7 @@ const ViewDetails = () => {
                 className="input input-bordered input-accent w-full"
               />
             </div>
+            
             <div>
               <p className="text-lg font-medium mb-1">
                 Recommended Product Image
