@@ -35,6 +35,7 @@ const My_recommend = () => {
           },
           body : JSON.stringify({queryId : queryId})
         })
+        
           .then((res) => res.json())
           .then((data) => {
             console.log(data);
