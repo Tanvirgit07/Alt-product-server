@@ -79,6 +79,7 @@ const ViewDetails = () => {
         <div className="flex gap-4 items-center mb-8">
           <div className="">
             <img
+            
               src={viewData.photoURL}
               className="w12 h-12 rounded-full"
               alt=""
@@ -141,7 +142,7 @@ const ViewDetails = () => {
               {/* {" "} */}
               Add Recommendation Form
             </h1>
-            
+
           </div>
         </div>
       </div>
