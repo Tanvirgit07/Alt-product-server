@@ -16,7 +16,7 @@ const My_recommend = () => {
       });
   }, [user?.email]);
 
-  const handleInfoDelete = (_id) => {
+  const handleInfoDelete = (_id,queryId) => {
     console.log(_id);
     Swal.fire({
       title: "Are you sure?",
@@ -30,6 +30,10 @@ const My_recommend = () => {
       if (result.isConfirmed) {
         fetch(`https://alternative-product-information-server-iota.vercel.app/recommend/${_id}`, {
           method: "DELETE",
+          headers : {
+            'content-type' : 'application/json'
+          },
+          body : JSON.stringify({queryId : queryId})
         })
           .then((res) => res.json())
           .then((data) => {
@@ -81,7 +85,7 @@ const My_recommend = () => {
                   <td>{singleRec.reEmail}</td>
                   <td>{singleRec.reProName}</td>
                   <td>{singleRec.reCurrentDate}</td>
-                  <td onClick={() => handleInfoDelete(singleRec._id)}>
+                  <td onClick={() => handleInfoDelete(singleRec._id,singleRec.queryId)}>
                     <MdDelete className="text-xl cursor-pointer" />
                   </td>
                 </tr>
