@@ -27,12 +27,11 @@ const RecentQueries = () => {
             key={recentProduct._id}
             className="card card-compact bg-base-100 shadow-2xl border-solid border-2 border-indigo-600"
           >
-            <figure className="bg-white-300 py-5 w-96">
-              <img
-                src={recentProduct.productURL}
-                alt="Shoes"
-                className="w-4/5 h-72 mx-auto"
-              />
+            <figure className="bg-white-300 max-w-md py-5">
+            <img
+            className="w-4/5 h-60 mx-auto"
+             src={recentProduct.productURL}
+             alt="" />
             </figure>
             <div className="card-body">
               <div className="flex gap-2 mb-4">

@@ -53,7 +53,7 @@ const My_queries = () => {
   return (
     <div>
       <div
-        className="hero h-[30vh] rounded-xl my-10"
+        className="hero h-[30vh] lg:rounded-xl my-10"
         style={{
           backgroundImage:
             "url(https://i.ibb.co/LZYcK6J/banner-1176676-1280.jpg)",
@@ -72,16 +72,16 @@ const My_queries = () => {
         </div>
       </div>
       {addData.length >= 1 ? (
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 w-11/12 mx-auto">
           {addData.map((sortData) => (
             <div
               key={sortData._id}
               className="card card-compact lg:w-[410px] bg-base-100 shadow-2xl border-solid border-2 border-secondary"
             >
-              <figure className="bg-white-300 py-5 w-96">
+              <figure className="bg-white-300 py-5 max-w-md">
                 <img
                   src={sortData.productURL}
-                  className="w-4/5 h-64 mx-auto"
+                  className="w-4/5 h-60 mx-auto"
                   alt="Shoes"
                 />
               </figure>

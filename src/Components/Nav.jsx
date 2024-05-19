@@ -71,7 +71,7 @@ const Nav = () => {
           </ul>
         </div>
         <div className="flex items-center">
-          <div className="w-14 h-14">
+          <div className="w-12 h-12 hidden lg:block">
             <img
             className="rounded-xl"
               src="https://i.ibb.co/JzX4St3/post-office-1019869-1280.jpg"

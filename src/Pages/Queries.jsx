@@ -6,7 +6,7 @@ const Queries = () => {
   const [allData, setAllData] = useState([]); // Original data
   const [filteredData, setFilteredData] = useState([]); // Filtered data based on search query
   const [searchQuery, setSearchQuery] = useState(""); // Search query
-  const [gridLayout, setGridLayout] = useState("grid-cols-3"); // Grid layout state
+  const [gridLayout, setGridLayout] = useState("grid-cols-1"); // Grid layout state
 
   // Fetch data from the server and set both original and filtered data
   useEffect(() => {
@@ -95,17 +95,17 @@ const Queries = () => {
         </div>
       </div>
 
-      <div className={`grid ${gridLayout} gap-8`}>
+      <div className={`grid ${gridLayout} gap-8 w-11/12 mx-auto`}>
         {filteredData.map((aPost) => (
           <div
             key={aPost._id}
-            className="card card-compact bg-base-100 shadow-2xl border-solid border-2 border-warning"
+            className="card card-compact bg-base-100 shadow-2xl border-solid border-2 border-warning "
           >
-            <figure className="bg-white-300 py-5 w-96">
+            <figure className="bg-white-300 py-5 max-w-md">
               <img
                 src={aPost.productURL}
                 alt="Shoes"
-                className="w-4/5 h-72 mx-auto"
+                className="w-4/5 h-60 mx-auto"
               />
             </figure>
             <div className="card-body">
