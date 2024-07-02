@@ -72,7 +72,7 @@ const My_queries = () => {
         </div>
       </div>
       {addData.length >= 1 ? (
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 w-11/12 mx-auto">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
           {addData.map((sortData) => (
             <div
               key={sortData._id}
