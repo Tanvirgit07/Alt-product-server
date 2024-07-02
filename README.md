@@ -1,29 +1,40 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Alternative Product info here !
 
 
-## Website Name :
-## PostForum
+## Project name and description 
+
+
+[PostForum](https://alternative-product-client.web.app)
+
+<h3>📝 OverView</h3>
+<P>Depending on your website project, it appears that you are offering different alternative versions of a product or service. The main objective of this project is to give the customers options according to their preferences so that they can select according to their preferences. This can help increase the chances of product preference among customers and ensure their satisfactory experience. This naturally helps in retaining the trust of the customer as they get full freedom to choose the product or service as per their choice.</P>
+
+
 
 
 ## website link 
-[website link](https://alternative-product-client.web.app)
+[PostForum](https://alternative-product-client.web.app)
 
 
 ## Features
-* You can post any alternative product
-* You also recommend any other person post
-* You can also know how many torist spots has your list
-* You can delete
-* You can also update
+* If you need an alternative peoduct for any of the prodicts, you can find out about the alternative product by posting on this website.users of the website will inform you about alternative product.
+* You can update or delete your post at any time as needed.you can also see everyone else's post.
+* You will get the facillties of login logout and also you can use all types of device like mobile and computer.
 
+## What technology is used
+* HTML
+* CSS
+* React.js
+* Js
+* Tailwind css
+* Mongodb
+* Firebase and etc..
 
-## selected category's name
-### assignment_category_0009
-### Tourism Management website
+## How to run 
+* step - 1
+  - git clone (url)
+* step - 2
+  - npm i
+* step - 3
+ - nodemon index.js
+
